@@ -1,0 +1,84 @@
+#include "stdafx.h"
+#include <conio.h>
+ 
+int main(){
+       int i;
+       short int A[] = { 1, 2, 3, 4, 5, 6 },*p;
+       for (i = 0; i < 6; i++){
+             printf("%d   %d\n", A+i, *(A + i));
+       }
+ 
+       getch();
+       return 0;
+}
+#include "stdafx.h"
+#include <conio.h>
+ 
+int main(){
+       int i;
+       short int A[6] = { 1, 2, 3, 4, 5, 6 },*p;
+       p = A;
+       for (i = 0; i < 6; i++){
+             printf("%d   %d\n", p+i, *(p + i));
+       }
+ 
+       getch();
+       return 0;
+}
+ 
+#include "stdafx.h"
+#include <conio.h>
+ 
+int main(){
+       int i;
+       short int A[6] = { 1, 2, 3, 4, 5, 6 },*p;
+       for (i = 0; i < 6; i++){
+             printf("%d   %d\n", &A[i], A[i]);
+       }
+ 
+       getch();
+       return 0;
+}
+ 
+#include "stdafx.h"
+#include <conio.h>
+ 
+int main(){
+       int i;
+       short int A[6] = { 1, 2, 3, 4, 5, 6 },*p;
+       p = A;
+       for (i = 0; i < 6; i++){
+             printf("%d   %d\n", &p[i], p[i]);
+       }
+ 
+       getch();
+       return 0;
+}
+ 
+#include "stdafx.h"
+#include <conio.h>
+ 
+int main(){
+       int i;
+       short int *p;
+       p[0] = 1; p[1] = 2; p[2] = 3; p[3] = 4; p[4] = 5; p[5] = 6;
+       for (i = 0; i < 6; i++){
+             printf("%d   %d\n", &p[i], p[i]);
+       }
+ 
+       getch();
+       return 0;
+}
+#include "stdafx.h"
+ 
+void fonk(int *p){
+       int i;
+       for (i = 0; i < 5; i++){
+             printf("%d      %d\n", *(p + i),p[i]);
+       }
+}
+int main(){
+       int a[5] = { 10, 20, 30, 40, 50 };
+       fonk(&a[0]);
+       return 0;
+}

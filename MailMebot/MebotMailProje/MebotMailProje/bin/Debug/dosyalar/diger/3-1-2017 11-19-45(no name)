@@ -1,0 +1,8 @@
+Reporting-MTA: dns;SNT004-MC7F22.hotmail.com
+Received-From-MTA: dns;mail-it0-f49.google.com
+Arrival-Date: Mon, 2 Jan 2017 23:16:45 -0800
+
+Final-Recipient: rfc822;mebutsunum@outlook.com
+Action: failed
+Status: 5.5.0
+Diagnostic-Code: smtp;550 Requested action not taken: mailbox unavailable (-1627587383:4278:0)

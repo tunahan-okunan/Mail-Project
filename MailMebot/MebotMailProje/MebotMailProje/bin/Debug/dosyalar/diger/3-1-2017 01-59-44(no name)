@@ -1,0 +1,8 @@
+Reporting-MTA: dns;COL004-OMC1S11.hotmail.com
+Received-From-MTA: dns;EUR02-HE1-obe.outbound.protection.outlook.com
+Arrival-Date: Mon, 2 Jan 2017 13:57:36 -0800
+
+Final-Recipient: rfc822;mebutsunum@yandex.com
+Action: failed
+Status: 5.7.1
+Diagnostic-Code: smtp;550 5.7.1 No such user!

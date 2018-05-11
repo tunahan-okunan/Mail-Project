@@ -1,0 +1,14 @@
++1-dosya veritabanýna yazma 
++2-dosyayý gösterme
++3-indirme
+[Mission Completed]
+******************************************************************
+1-arama kýsýmlarý düzeltilecek
+2-taslak kýsmý yapýlacak
+3-silinen kutusu yapýlcak  
+[Mission Completed] 
+******************************************************************
+1-Taslaða dosya kaydetme
+2-Taslaktan Dosya Gönderme
+3-Çýkýþ Ýþlemi
+[Failed]

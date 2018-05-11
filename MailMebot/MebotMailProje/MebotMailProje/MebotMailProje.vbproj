@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1F83DF8D-F70B-4106-A822-4DF2B1711559}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>MebotMailProje.My.MyApplication</StartupObject>
+    <RootNamespace>MebotMailProje</RootNamespace>
+    <AssemblyName>MebotMailProje</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>MebotMailProje.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>MebotMailProje.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>puzzle.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="OpenPop">
+      <HintPath>..\OpenPop.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="classes\KullaniciBilgileri.vb" />
+    <Compile Include="classes\MailAlma.vb" />
+    <Compile Include="classes\MailGonderme.vb" />
+    <Compile Include="classes\MailSilmeIslemleri.vb" />
+    <Compile Include="classes\MailTaslak.vb" />
+    <Compile Include="classes\Sifreleme.vb" />
+    <Compile Include="classes\SqlDB.vb" />
+    <Compile Include="classes\TumMailler.vb" />
+    <Compile Include="frm_aciklama.Designer.vb">
+      <DependentUpon>frm_aciklama.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_aciklama.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_GelenKutusuDetay.Designer.vb">
+      <DependentUpon>frm_GelenKutusuDetay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_GelenKutusuDetay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Giris.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Giris.Designer.vb">
+      <DependentUpon>frm_Giris.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gonderilenMaillerDetay.Designer.vb">
+      <DependentUpon>frm_gonderilenMaillerDetay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gonderilenMaillerDetay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gonderilenMaillerPlatformu.Designer.vb">
+      <DependentUpon>frm_gonderilenMaillerPlatformu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gonderilenMaillerPlatformu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_kayitOl.Designer.vb">
+      <DependentUpon>frm_kayitOl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_kayitOl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_mailGelen.Designer.vb">
+      <DependentUpon>frm_mailGelen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_mailGelen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_mailGonderme.Designer.vb">
+      <DependentUpon>frm_mailGonderme.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_mailGonderme.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_mailicerik.Designer.vb">
+      <DependentUpon>frm_mailicerik.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_mailicerik.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Silinenler.Designer.vb">
+      <DependentUpon>frm_Silinenler.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Silinenler.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_taslak.Designer.vb">
+      <DependentUpon>frm_taslak.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_taslak.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="interfaces\IKullaniciBilgileri.vb" />
+    <Compile Include="interfaces\IMailGonderme.vb" />
+    <Compile Include="interfaces\ISqlDB.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frm_aciklama.resx">
+      <DependentUpon>frm_aciklama.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_GelenKutusuDetay.resx">
+      <DependentUpon>frm_GelenKutusuDetay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Giris.resx">
+      <DependentUpon>frm_Giris.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gonderilenMaillerDetay.resx">
+      <DependentUpon>frm_gonderilenMaillerDetay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gonderilenMaillerPlatformu.resx">
+      <DependentUpon>frm_gonderilenMaillerPlatformu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_kayitOl.resx">
+      <DependentUpon>frm_kayitOl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_mailGelen.resx">
+      <DependentUpon>frm_mailGelen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_mailGonderme.resx">
+      <DependentUpon>frm_mailGonderme.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_mailicerik.resx">
+      <DependentUpon>frm_mailicerik.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Silinenler.resx">
+      <DependentUpon>frm_Silinenler.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_taslak.resx">
+      <DependentUpon>frm_taslak.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="puzzle.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
